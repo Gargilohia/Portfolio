@@ -3,88 +3,348 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gargi Lohia - Portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="main-header">
-        <div class="container">
-            <h1>Gargi Lohia</h1>
-            <p>Software Engineer | Writer</p>
+    <nav class="navigation">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">GL</a>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#writing" class="nav-link">Writing</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
         </div>
-    </header>
-
-    <nav class="navbar">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#blogs">Blogs</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
     </nav>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                Hello! I'm Gargi Lohia, a software engineer currently working in Japan. With a B.Tech in Computer Science and experience in developing applications in a fully Japanese environment, I am passionate about building efficient and impactful tech solutions. I aspire to meaningfully to the tech world.
-            </p>
-            <p>
-                I love learning new skills, whether it's improving my Japanese language skills, or diving into system design. In my free time, I enjoy writing blogs, cooking healthy meals, and exploring new places.
-            </p>
-        </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-list">
-                <div class="project-item">
-                    <h3>Ja-nal</h3>
-                    <p>A React and Flask-based journal app using the OpenAI API to provide gamified prompts and encourage daily journaling.</p>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-quote">
+                    <p class="quote-text">"I took a deep breath and listened to the old brag of my heart. I am, I am, I am."</p>
+                    <p class="quote-author">— Sylvia Plath, The Bell Jar</p>
                 </div>
-                <div class="project-item">
-                    <h3>Ethereum ETL</h3>
-                    <p>Re-implementation of the Ethereum ETL command-line tool in Rust, focusing on optimizing data processing and efficiency.</p>
+                <h1 class="hero-title">Hello, I'm <span class="highlight">Gargi.</span></h1>
+                <p class="hero-subtitle">Software Engineer · Writer · Multilingual Technologist</p>
+                <div class="hero-links">
+                    <a href="#about" class="btn btn-primary">Explore My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="blogs" class="blogs">
-        <div class="container">
-            <h2>Blogs</h2>
-            <p>
-                Writing is one of my passions, and I've been documenting my journey, thoughts, and experiences in my blog. Here are a few highlights:
-            </p>
-            <ul>
-                <li><a href="https://medium.com/@_Gargi_/work-life-in-japan-20b23888225d">Ganbare: Navigating the Japanese Workplace</a></li>
-                <li><a href="https://medium.com/@_Gargi_/from-poteto-to-personal-growth-six-months-in-japan-56f00f33f4b5">From \"Poteto\" to Personal Growth: Six Months in Japan</a></li>
-                <li><a href="https://medium.com/@_Gargi_/the-imperfect-anarchist-world-of-the-dispossessed-6fc99898d526">My Thoughts on 'The Dispossessed' by Ursula K. Le Guin</a></li>
-                <li><a href="https://medium.com/@_Gargi_/2024-artistic-absurd-femgore-the-substance-556d5630d697">The 2024 body horror ‘The Substance’ is a ‘Femgore’ art movie </a></li>
-            </ul>
-        </div>
-    </section>
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="lead">A software engineer navigating the intersection of technology and narrative, currently based in Tokyo.</p>
+                        <p>I build distributed systems and applications by day, and lose myself in the works of Sylvia Plath and Ottessa Moshfegh by night. My work spans backend architecture, and generative AI, always with an eye for elegant solutions to complex problems.</p>
+                        <p>Fluent in English, Japanese, and Hindi, I bring a multilingual perspective to both my technical work and my writing. Currently crafting APIs and AI systems at Tribeat Japan, while contributing to the broader conversation through my blog.</p>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>
-                Let's connect! Whether you have a project idea, a job opportunity, or just want to say hi, feel free to reach out.
-            </p>
-            <ul>
-                <li>Email: <a href="mailto:gargilohia2001@yahoo.com">gargilohia2001@yahoo.com</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/gargi-lohia/" target="_blank">linkedin.com/in/gargi-lohia</a></li>
-                <li>GitHub: <a href="https://github.com/Gargilohia" target="_blank">github.com/Gargilohia</a></li>
-            </ul>
-        </div>
-    </section>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-number">4</span>
+                                <span class="stat-label">Languages</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">2+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">0</span>
+                                <span class="stat-label">Subscriptions</span>
+                            </div>
+                        </div>
+                    </div>
 
-    <footer class="main-footer">
+                    <div class="skills-section">
+                        <h3>Technical Expertise</h3>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4>Languages</h4>
+                                <p>Go, Python, Typescript</p>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Frameworks</h4>
+                                <p>React, Flask, Node.js</p>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Cloud & DevOps</h4>
+                                <p>AWS, Azure, Docker, Git</p>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Databases</h4>
+                                <p>PostgresSQL, CosmosDB</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">March 2024 – Present</span>
+                            <h3>Expert Backend Developer</h3>
+                            <h4>Tribeat Japan · Tokyo, Japan</h4>
+                            <ul>
+                                <li>Developed APIs for student management system using Onion Architecture in Golang with performance-optimized SQL queries</li>
+                                <li>Automated monthly AWS Datalake creation through robust, partitioned batch processes with fail-safe mechanisms</li>
+                                <li>Designed AWS authentication infrastructure for multiple clients</li>
+                                <li>Contributed to AI-powered B2B eCommerce platform using AWS Glue and AI embeddings</li>
+                                <li>Participated in recruitment processes and internal company events</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">July 2023 – February 2024</span>
+                            <h3>Software Engineer</h3>
+                            <h4>Human Resocia · Tokyo, Japan</h4>
+                            <ul>
+                                <li>Developed Generative AI and RAG-powered internal web applications for document/image search, meeting minutes, and translation with fully Japanese team</li>
+                                <li>Led UI and REST API development, test code creation, and Azure management</li>
+                                <li>Collaborated on database development and requirements definition using Agile/SCRUM practices</li>
+                                <li>Documented processes and managed DevOps tasks using Azure in Japanese</li>
+                                <li><em>Stack: ReactJS, Flask, Python, Azure APIs, CosmosDB, Azure DevOps</em></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">September 2022 – August 2023</span>
+                            <h3>Software Engineer Intern</h3>
+                            <h4>RoverX · Bengaluru, India</h4>
+                            <ul>
+                                <li>Re-implemented Ethereum ETL tool in Rust, optimizing data processing</li>
+                                <li>Developed Discord bot using Golang with smooth backend integration</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">May 2022 – July 2022</span>
+                            <h3>Web Development Intern</h3>
+                            <h4>Studiezone · Remote</h4>
+                            <ul>
+                                <li>Designed UI frameworks for B2B placement portal</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education">
+                    <h3>Education</h3>
+                    <div class="education-item">
+                        <h4>Bachelor of Technology, Computer Science</h4>
+                        <p class="institution">Vellore Institute of Technology · Vellore, India</p>
+                        <p class="graduation">Graduated May 2023 · GPA: 8.83/10</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Selected Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card featured">
+                        <div class="project-header">
+                            <h3>Decentralized Campaign Manager</h3>
+                            <span class="project-tag">Web3</span>
+                        </div>
+                        <p class="project-description">Built a Web3-based application enabling public contributions to campaigns using blockchain technology.</p>
+                        <div class="project-tech">
+                            <span>Ethereum</span>
+                            <span>Solidity</span>
+                            <span>Smart Contracts</span>
+                            <span>Node.js</span>
+                            <span>Web3.js</span>
+                            <span>React.js</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Destinations</h3>
+                            <span class="project-tag">Full Stack</span>
+                        </div>
+                        <p class="project-description">Full-stack web application for destination management and discovery.</p>
+                        <div class="project-tech">
+                            <span>MongoDB</span>
+                            <span>Express</span>
+                            <span>Node.js</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Ethereum ETL (Rust)</h3>
+                            <span class="project-tag">Blockchain</span>
+                        </div>
+                        <p class="project-description">High-performance re-implementation of Ethereum data extraction tool optimized for speed.</p>
+                        <div class="project-tech">
+                            <span>Rust</span>
+                            <span>Ethereum</span>
+                            <span>Data Processing</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Document Scanner & Grader</h3>
+                            <span class="project-tag">Computer Vision</span>
+                        </div>
+                        <p class="project-description">Automated document scanning and grading system using computer vision.</p>
+                        <div class="project-tech">
+                            <span>OpenCV</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Chess Algorithm Parallelization</h3>
+                            <span class="project-tag">Performance</span>
+                        </div>
+                        <p class="project-description">Optimized chess program algorithms through parallelization techniques.</p>
+                        <div class="project-tech">
+                            <span>Parallel Computing</span>
+                            <span>Algorithms</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Gotham News Agency</h3>
+                            <span class="project-tag">Frontend</span>
+                        </div>
+                        <p class="project-description">Responsive static website for a news agency with modern design.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>Bootstrap</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="writing" class="writing">
+            <div class="container">
+                <h2 class="section-title">Writing</h2>
+                <div class="writing-intro">
+                    <p class="lead">Thoughts on technology, literature, and the spaces between.</p>
+                    <blockquote class="literary-quote">
+                        "You are a hurricane of a girl; remember to breathe every once in a while, do not drown within your own storm."
+                        <cite>— Inspired by the introspection of Plath and Moshfegh</cite>
+                    </blockquote>
+                </div>
+
+                <div class="blog-links">
+                    <a href="https://medium.com/@_Gargi_" class="blog-link-card" id="blog-link">
+                        <h3>Visit My Blog</h3>
+                        <p>Essays and reflections on code, culture, and craft</p>
+                        <span class="arrow">→</span>
+                    </a>
+
+                    <div class="reading-list">
+                        <h3>Currently Reading</h3>
+                        <ul>
+                            <li><em>The Bell Jar</em> by Sylvia Plath (perennial favorite)</li>
+                            <li><em>My Year of Rest and Relaxation</em> by Ottessa Moshfegh</li>
+                            <li><em>Eileen</em> by Ottessa Moshfegh</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="achievements">
+                    <h3>Recognition</h3>
+                    <ul class="achievements-list">
+                        <li><strong>Finalist</strong> — Ideathon 2021, IIIT Pune</li>
+                        <li><strong>Star Correspondent</strong> — Times of India (2015-2016)</li>
+                        <li><strong>Student Pupil Leader</strong> — Amrita Vidyalayam, Chennai (2018-2019)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-text">
+                        <p class="lead">I'm always interested in collaborating on meaningful projects or discussing technology, literature, and cross-cultural experiences.</p>
+                        <p>Whether you're looking to build something together, discuss an opportunity, or simply connect over shared interests in Plath's poetry or distributed systems, feel free to reach out.</p>
+                    </div>
+
+                    <div class="contact-links">
+                        <a href="https://github.com/Gargilohia" class="contact-link" id="github-link" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+
+                        <a href="mailto:gargilohia123@gmail.com" class="contact-link" id="email-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>Email</span>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/gargi-lohia/" class="contact-link" id="linkedin-link" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+
+                    <div class="certifications">
+                        <h3>Certifications</h3>
+                        <ul>
+                            <li>Microsoft Azure Fundamentals (AZ-900)</li>
+                            <li>Ethereum & Solidity: The Complete Developer's Guide</li>
+                            <li>Pentesting and Securing Web Applications (Ethical Hacking)</li>
+                            <li>Modern React With Redux 2023</li>
+                            <li>JLPT N3 (Japanese Language Proficiency Test)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Gargi Lohia. All Rights Reserved.</p>
+            <p class="footer-quote">"And by the way, everything in life is writable about if you have the outgoing guts to do it." — Sylvia Plath</p>
+            <p class="footer-copy">&copy; 2024 G. Lohia. Built with curiosity and caffeine.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
