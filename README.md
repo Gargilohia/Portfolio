@@ -48,6 +48,3 @@ Featuring quotes and themes that reflect introspection and literary sophisticati
 
 Feel free to use this template for your own portfolio. Attribution appreciated but not required.
 
----
-
-Built with care and curiosity.
